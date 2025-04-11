@@ -23,7 +23,7 @@ This project showcases our design and web development skills.
           </p>
           <div className="contact__box__bottom__button">
             <a
-              href="emmanueladewunmi51@gmail.com"
+              href="mailto:emmanueladewunmi51@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >

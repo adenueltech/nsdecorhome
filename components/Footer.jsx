@@ -40,7 +40,7 @@ const Footer = () => {
            Instagram
           </a>
           <a
-            href="emmanueladewunmi51@gmail.com"
+            href="mailto:emmanueladewunmi51@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
