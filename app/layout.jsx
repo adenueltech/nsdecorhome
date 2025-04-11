@@ -29,7 +29,7 @@ export const metadata = {
       'https://res.cloudinary.com/dqfzpmj9n/image/upload/v1719892368/scandinavian-living-room-interior-design-zoom-background_1_rui1xk.jpg',
   },
 };
-
+// rreewh
 const MainLayout = ({ children }) => {
   return (
     <html lang="en" className={`${playfair.variable} ${manrope.variable}`}>
