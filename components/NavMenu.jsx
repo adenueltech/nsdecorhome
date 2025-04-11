@@ -117,16 +117,16 @@ const NavMenu = ({ color }) => {
               <div className="menu-info-col">
                 <div className="menu-info-col-item">
                   <div className="menu-info-col-holder">
-                    <AnimatedLink url="https://twitter.com/The_vine__">
+                    <AnimatedLink url="https://x.com/adenuel_dev">
                       Twitter
                     </AnimatedLink>
-                    <AnimatedLink url="https://www.linkedin.com/in/viney17">
+                    <AnimatedLink url="https://www.linkedin.com/in/emmanuel-adewunmi-613512308/">
                       Linkedin
                     </AnimatedLink>
-                    <AnimatedLink url="mailto:officialkb17@gmail.com">
+                    <AnimatedLink url="mailto:emmanueladewunmi51@gmail.com">
                       Email
                     </AnimatedLink>
-                    <AnimatedLink url="https://github.com/vineyy17">
+                    <AnimatedLink url="https://github.com/adenueltech">
                       Github
                     </AnimatedLink>
                   </div>
