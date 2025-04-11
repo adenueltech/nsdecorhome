@@ -1,0 +1,174 @@
+@use '/styles/main.scss' as *;
+
+.main {
+  position: relative;
+  z-index: 2;
+  left: -0.4rem;
+  visibility: hidden;
+  opacity: 0;
+  overflow-x: hidden;
+
+  @include media('<=phone-tab') {
+    left: -0.1rem;
+  }
+
+  &__heading {
+    font-size: 20vw;
+    white-space: nowrap;
+    line-height: 1;
+    letter-spacing: -0.4rem;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 900;
+    font-family: var(--font-playfair);
+    color: $secondary;
+
+    @include media('<=tablet') {
+      margin-right: 0rem;
+    }
+    @include media('<=phone-tab') {
+      line-height: 1;
+      letter-spacing: -0.1rem;
+    }
+  }
+
+  &__about {
+    margin-left: max(40px, 6rem);
+    // margin-top: 2rem;
+
+    @include media('<=tablet') {
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    &__text {
+      text-align: left;
+      color: $col-milch;
+      line-height: 143%;
+      margin-bottom: max(5px, 0.7rem);
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: -0.02rem;
+
+      font-size: max(14px, 0.9rem);
+
+      @include media('<=tablet') {
+        margin-top: 0;
+        margin-left: max(30px, 2rem);
+      }
+
+      @include media('<=phone-tab') {
+        margin-left: max(5px, 0.7rem);
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__button {
+      @include media('<=tablet') {
+        margin-left: max(30px, 2rem);
+      }
+
+      @include media('<=phone-tab') {
+        margin-left: max(5px, 0.7rem);
+      }
+    }
+
+    &__box {
+      width: fit-content;
+      text-transform: uppercase;
+      text-align: right;
+      line-height: 1.2;
+      margin: 0 auto;
+      transform: translateX(-8%);
+
+      @include media('<=tablet') {
+        transform: translateX(-6%);
+      }
+
+      @include media('<=phone-tab') {
+        transform: translateX(-6%);
+      }
+
+      h1 {
+        font-size: 3.3rem;
+        letter-spacing: -0.05em;
+        font-family: var(--font-manrope);
+        color: $col-milch;
+        font-weight: 400;
+        margin-top: 8rem;
+
+        @include media('<=desktop') {
+          margin-top: 3.3rem;
+        }
+
+        @include media('<=tablet') {
+          font-size: 2.3rem;
+          margin-top: 3.5rem;
+        }
+
+        @include media('<=tablet') {
+          font-size: 2.3rem;
+          margin-top: 3.3rem;
+        }
+
+        @include media('<=phone-tab') {
+          font-size: 2rem;
+          margin-top: 2.8rem;
+          letter-spacing: -0.04em;
+        }
+      }
+    }
+
+    &__model {
+      height: 28rem;
+
+      @include media('<=tablet') {
+        height: fit-content;
+      }
+
+      @include media('<=tablet') {
+        height: fit-content;
+      }
+
+      &__image {
+        object-fit: cover;
+        margin: 0 auto;
+        margin-top: 2.8rem;
+
+        @include media('<=tablet') {
+          margin-top: 2rem;
+        }
+
+        @include media('<=phone-tab') {
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    &__footerText {
+      font-size: 3.3rem;
+      letter-spacing: -0.05em;
+      font-family: var(--font-manrope);
+      color: $col-milch;
+      font-weight: 400;
+
+      @include media('<=desktop') {
+        margin-top: 3.3rem;
+        margin-bottom: 3.3rem;
+      }
+
+      @include media('<=tablet') {
+        font-size: 2.3rem;
+        margin-top: 1.9rem;
+      }
+
+      @include media('<=phone-tab') {
+        font-size: 2rem;
+        margin-top: 1.9rem;
+        // margin-bottom: 2.5rem;
+        letter-spacing: -0.04em;
+      }
+    }
+  }
+}

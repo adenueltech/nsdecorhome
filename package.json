@@ -1,0 +1,32 @@
+{
+  "name": "nsdecor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.6",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@studio-freight/lenis": "^1.0.42",
+    "gsap": "^3.12.5",
+    "leva": "^0.9.35",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-responsive": "^10.0.0",
+    "splitting": "^1.0.6",
+    "zustand": "^4.5.4"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "sass": "^1.77.2"
+  }
+}

@@ -1,0 +1,69 @@
+@use '/styles/main.scss' as *;
+
+.y__transition {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  background: #e7e3d8;
+  padding: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media('<=phone-tab') {
+    padding: 1rem 1rem;
+    @include flex_col(0);
+    align-items: center;
+    justify-content: center;
+  }
+  &_scene {
+    width: 100%;
+    height: 100%;
+    background: #fefefe;
+
+    @include media('<=desktop') {
+      height: 50%;
+    }
+    @include media('<=tablet') {
+      height: 70%;
+      // background: none;
+    }
+    @include media('<=phone-tab') {
+      height: 40%;
+      // background: none;
+    }
+    margin: 0 auto;
+    @include flex_col(0);
+    align-items: center;
+    justify-content: center;
+    canvas {
+      height: 100%;
+      width: 100%;
+    }
+
+    p {
+      font-family: var(--font-manrope);
+      font-size: 5rem;
+      text-align: center;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+      // letter-spacing: -0.065em;
+      text-transform: uppercase;
+      color: $dark-brown;
+
+      @include media('<=tablet') {
+        font-size: 4rem;
+      }
+
+      @include media('<=phone-tab') {
+        font-size: 3rem;
+      }
+    }
+  }
+}

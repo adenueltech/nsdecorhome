@@ -1,0 +1,39 @@
+@use '/styles/main.scss' as *;
+
+.homePage {
+  min-height: 100vh;
+  height: toRem(1315);
+  @extend %hero;
+  background-image: url('https://res.cloudinary.com/dqfzpmj9n/image/upload/v1719892368/scandinavian-living-room-interior-design-zoom-background_1_rui1xk.jpg');
+  background-blend-mode: darken;
+  background-size: cover;
+
+  @include media('<=desktop') {
+    @include flex_col(1.5rem);
+    min-height: fit-content;
+    height: fit-content;
+  }
+
+  @include media('<=tablet') {
+    @include flex_col(1.5rem);
+    height: fit-content;
+  }
+
+  @include media('<=phone-tab') {
+    @include flex_col(1.5rem);
+    height: fit-content;
+  }
+}
+
+.homePage::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(60, 45, 45, 0.5);
+
+  z-index: 1;
+}
